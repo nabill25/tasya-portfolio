@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import profileImg from '../assets/profile.png';
 
 export default function About() {
     return (
@@ -10,20 +11,25 @@ export default function About() {
                 <p className="section-subtitle">Kenalan lebih dekat dengan saya yuk! 🌸</p>
 
                 <div className={styles.grid}>
-                    {/* Left: Story */}
+                    {/* Left: Story + Photo */}
                     <div className={styles.card}>
+                        <div className={styles.profilePhotoWrapper}>
+                            <img src={profileImg} alt="Tasya Amalia" className={styles.profilePhoto} />
+                        </div>
                         <div className={styles.cardIcon}>👩‍🎓</div>
                         <h3>My Story</h3>
                         <p>
-                            Perkenalkan, saya <strong>Tasya Amalia</strong> — mahasiswi semester 8 Program Studi
-                            Ilmu Komunikasi di Institut Bisnis & Informatika Kosgoro 1957. Selama berkuliah,
-                            saya telah mengembangkan kemampuan komunikasi, analisis media, dan pembuatan konten
-                            yang relevan di era digital.
+                            Halo, saya <strong>Tasya Amalia!</strong> Saya adalah seorang profesional kreatif dengan latar belakang
+                            Ilmu Komunikasi yang memiliki passion besar di dunia digital.
                         </p>
                         <p>
-                            Saya percaya bahwa komunikasi yang baik adalah kunci kesuksesan dalam setiap aspek
-                            kehidupan — baik dalam hubungan personal maupun profesional. Dengan bekal ilmu yang
-                            saya miliki, saya siap memberikan kontribusi nyata. ✨
+                            Bagi saya, karya digital yang baik adalah perpaduan harmonis antara estetika visual dan komunikasi
+                            yang efektif. Saya selalu antusias mengeksplorasi ide-ide baru dan berkomitmen untuk menciptakan
+                            solusi digital yang tidak hanya memanjakan mata, tetapi juga memberikan pengalaman yang bermakna
+                            bagi penggunanya.
+                        </p>
+                        <p className={styles.ctaText}>
+                            ✨ <em>Mari berkolaborasi dan ciptakan sesuatu yang luar biasa!</em>
                         </p>
                     </div>
 

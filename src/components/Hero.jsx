@@ -1,4 +1,4 @@
-import avatarImg from '../assets/avatar.png';
+import avatarImg from '../assets/profile.png';
 import styles from './Hero.module.css';
 
 const floatingItems = ['🌸', '💕', '✨', '🌺', '💖', '⭐', '🦋', '🌷'];
